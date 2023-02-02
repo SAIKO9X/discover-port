@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Merriweather Sans", sans-serif;
+}
+
+:root {
+	--body-bg-color: #22212c;
+	--text-color: #837e9f;
+	--bg-cards: #302f3d;
+	--bg-techs: #cb92b1;
+}
+
+body {
+	background: var(--body-bg-color);
+}
+
+.cards {
+	background: var(--bg-cards);
+
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+
+	margin-bottom: 30px;
+}
+
+.cards-2 {
+	padding: 30px;
+
+	background: var(--bg-cards);
+
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--text-color);
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+#sidebar {
+	width: 348px;
+
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+
+#profile {
+	height: 292px;
+	text-align: center;
+}
+
+#profile img {
+	width: 128px;
+	height: 128px;
+
+	border-radius: 50%;
+	border: 2px solid #00ff00;
+
+	object-position: center;
+	object-fit: cover;
+
+	margin-top: 32px;
+	margin-bottom: 30px;
+}
+
+#profile p {
+	font-weight: 400;
+	font-size: 13px;
+	color: var(--text-color);
+}
+
+#profile h1 {
+	font-weight: 700;
+	font-size: 23px;
+	color: var(--text-color);
+}
+
+#links {
+	padding: 34px 0 34px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.links-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.links-container a {
+	font-weight: 400;
+	font-size: 12px;
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+.links-container img {
+	width: 24px;
+}
+
+.technologies-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 15px;
+	row-gap: 15px;
+	padding: 30px;
+}
+
+.technologies {
+	background-color: var(--bg-techs);
+
+	padding: 6px 0 7px;
+
+	width: 86px;
+	height: 24px;
+
+	border-radius: 30px;
+
+	text-align: center;
+
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.data-container {
+	padding: 20px 0 30px 40px;
+	position: relative;
+}
+
+.institution {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--text-color);
+}
+
+.experience-year {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: var(--text-color);
+}
+
+.experience-name {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: var(--text-color);
+}
+
+.data {
+	margin-bottom: 25px;
+}
+
+.dot {
+	position: absolute;
+	left: 30px;
+}
+
+#main-section {
+	position: absolute;
+	right: 40px;
+	left: 448px;
+	top: 40px;
+}
+
+#my-projects {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--text-color);
+}
+
+#my-projects p {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#my-projects span {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#projects {
+	display: flex;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.folder {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+
+	margin-bottom: 20px;
+
+	color: var(--text-color);
+}
+
+#projects p {
+	color: var(--text-color);
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#git-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 30px;
+}
+
+#git-likes {
+	display: flex;
+	gap: 16px;
+}
+
+.git-star {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--text-color);
+}
+
+#git-js {
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--text-color);
+}
+
+#git-js button {
+	width: 15px;
+	height: 15px;
+
+	background-color: #e7de79;
+	border: 2px solid #837e9f;
+	border-radius: 50%;
+}
+
+#recent-projects {
+	margin-top: 30px;
+}
+
+#recent-projects p {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--text-color);
+}
+
+#post {
+	margin-top: 30px;
+
+	display: flex;
+}
+
+#post img {
+	width: 128px;
+	height: 128px;
+
+	border-radius: 50%;
+
+	object-fit: cover;
+	object-position: center;
+}
+
+#message {
+	margin-left: 20px;
+}
+
+#message-header {
+	padding-bottom: 30px;
+
+	color: var(--text-color);
+}
+
+#message-header p {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+#message-header span {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 10px;
+}
+
+#message-footer p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--text-color);
+}
+
+#message-footer span {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--text-color);
+}
+
+.hash {
+	display: flex;
+	gap: 10px;
+	padding-top: 10px;
+}
